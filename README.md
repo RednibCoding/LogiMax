@@ -4,7 +4,7 @@ Tiny Digital Circuit Simulator Tool written in C
 
 ![](readme/screenshot01.png)
 
-# Hot to build
+# How to build
 
 The project is self contained which means it comes with all dependencies.
 
