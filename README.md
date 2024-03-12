@@ -12,3 +12,8 @@ run:
 
 - `build.bat` on windows
 - `build.sh` on linux
+
+# Features
+
+- Tiny self contained binary ~110kb
+- ...

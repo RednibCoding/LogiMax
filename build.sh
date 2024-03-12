@@ -19,10 +19,10 @@ SRC_FILES=main.c node.c connector.c
 
 # Debug build
 # Uncomment the following line for debug build
-# $COMPILER $SRC_FILES $RES_FILES -o $OUTPUT_FILE_NAME -std=c99 -lopengl32 -lgdi32
+# $COMPILER $SRC_FILES $RES_FILES -o $OUTPUT_FILE_NAME -std=c99 -lGLU -lGL -lX11
 
 # Release build
-$COMPILER $SRC_FILES $RES_FILES -o $OUTPUT_FILE_NAME -std=c99 -s -lopengl32 -lgdi32 -O3 -march=native -funroll-loops -flto -fomit-frame-pointer
+$COMPILER $SRC_FILES $RES_FILES -o $OUTPUT_FILE_NAME -std=c99 -s -lGLU -lGL -lX11 -O3 -march=native -funroll-loops -flto -fomit-frame-pointer
 
 if [ $? -ne 0 ]; then
     echo "Compilation failed."
