@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "minigfx.h": "c",
+        "stdbool.h": "c",
+        "node.h": "c"
+    }
+}

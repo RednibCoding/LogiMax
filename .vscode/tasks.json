@@ -1,0 +1,33 @@
+// Note: you need to have gcc installed (mingGW etc) and the path to gcc in your "PATH" environtment variable. E.g .../mingw64/bin/gcc.exe
+
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe build active file",
+            "command": "gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "node.c",
+                "connector.c",
+                "-lopengl32",
+                "-lgdi32",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+    ],
+    "version": "2.0.0"
+}
